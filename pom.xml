@@ -12,16 +12,21 @@
 	<artifactId>AuthJWT</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AuthJWT</name>
-	<description>POC for using auth0</description>
+	<description>Use auth0 package to validate JWT token</description>
 	<properties>
 		<java.version>22</java.version>
+		<auth0-jwt.version>4.2.1</auth0-jwt.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>${auth0-jwt.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
